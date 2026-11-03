@@ -1,0 +1,49 @@
+# nicolascardenass.github.io
+
+> 🇧🇷 Resumo em português no [final deste arquivo](#resumo-em-português).
+
+Personal portfolio of **Nicolas Cardenas**, built with Next.js, TypeScript and Tailwind CSS and
+published as a static site on GitHub Pages.
+
+## Stack
+
+- [Next.js](https://nextjs.org/) (App Router, static export)
+- TypeScript (strict mode)
+- Tailwind CSS v4
+- ESLint + Prettier
+
+## Getting started
+
+Requirements: Node.js 22+.
+
+```bash
+npm install
+npm run dev        # http://localhost:3000
+```
+
+## Scripts
+
+| Script                 | Description                              |
+| ---------------------- | ---------------------------------------- |
+| `npm run dev`          | Start the development server             |
+| `npm run build`        | Build the static site into `out/`        |
+| `npm run start`        | Serve the exported site locally          |
+| `npm run lint`         | Run ESLint                               |
+| `npm run typecheck`    | Type-check the project with `tsc`        |
+| `npm run format`       | Format all files with Prettier           |
+| `npm run format:check` | Check formatting without writing changes |
+
+## Roadmap
+
+Development progress is tracked in [ROADMAP.md](./ROADMAP.md).
+
+## License
+
+[MIT](./LICENSE) © Nicolas Cardenas
+
+---
+
+## Resumo em português
+
+Portfólio pessoal de **Nicolas Cardenas**, feito com Next.js, TypeScript e Tailwind CSS e publicado
+como site estático no GitHub Pages. Para rodar localmente: `npm install` e `npm run dev`.
