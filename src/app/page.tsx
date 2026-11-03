@@ -1,8 +1,9 @@
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col justify-center px-6 py-24">
-      <h1 className="text-4xl font-semibold tracking-tight">Nicolas Cardenas</h1>
-      <p className="text-foreground/70 mt-4 text-lg">Portfolio under construction.</p>
-    </main>
+    <section id="top" className="container-page flex flex-1 flex-col justify-center py-24">
+      <p className="text-accent font-mono text-sm">Hello, world.</p>
+      <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">Nicolas Cardenas</h1>
+      <p className="text-muted mt-4 max-w-prose text-lg">Portfolio under construction.</p>
+    </section>
   );
 }

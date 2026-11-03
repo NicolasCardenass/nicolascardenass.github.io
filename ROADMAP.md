@@ -1,7 +1,7 @@
 # Roadmap
 
 - [x] Project scaffold: Next.js, TypeScript, Tailwind CSS, ESLint, Prettier, license, README
-- [ ] Base layout, light/dark theme and typography
+- [x] Base layout, light/dark theme and typography
 - [ ] Hero section
 - [ ] About section
 - [ ] Skills / tech stack section
