@@ -2,7 +2,7 @@
 
 - [x] Project scaffold: Next.js, TypeScript, Tailwind CSS, ESLint, Prettier, license, README
 - [x] Base layout, light/dark theme and typography
-- [ ] Hero section
+- [x] Hero section
 - [ ] About section
 - [ ] Skills / tech stack section
 - [ ] Projects data model (`lib/projects.ts`) and project card component
