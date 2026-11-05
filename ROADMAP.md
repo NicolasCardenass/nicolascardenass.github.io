@@ -4,7 +4,7 @@
 - [x] Base layout, light/dark theme and typography
 - [x] Hero section
 - [x] About section
-- [ ] Skills / tech stack section
+- [x] Skills / tech stack section
 - [ ] Projects data model (`lib/projects.ts`) and project card component
 - [ ] Filter projects by tag
 - [ ] Contact section and footer
