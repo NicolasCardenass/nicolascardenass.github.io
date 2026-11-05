@@ -5,7 +5,7 @@
 - [x] Hero section
 - [x] About section
 - [x] Skills / tech stack section
-- [ ] Projects data model (`lib/projects.ts`) and project card component
+- [x] Projects data model (`lib/projects.ts`) and project card component
 - [ ] Filter projects by tag
 - [ ] Contact section and footer
 - [ ] SEO: metadata, Open Graph, favicon, sitemap
