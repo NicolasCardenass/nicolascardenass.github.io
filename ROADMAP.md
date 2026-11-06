@@ -7,7 +7,7 @@
 - [x] Skills / tech stack section
 - [x] Projects data model (`lib/projects.ts`) and project card component
 - [x] Filter projects by tag
-- [ ] Contact section and footer
+- [x] Contact section and footer
 - [ ] SEO: metadata, Open Graph, favicon, sitemap
 - [ ] Accessibility and responsive polish
 - [ ] Unit tests (Vitest + Testing Library)
