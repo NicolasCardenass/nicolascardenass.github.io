@@ -87,3 +87,21 @@ export const statusLabel: Record<ProjectStatus, string> = {
   "in-progress": "In progress",
   planned: "Planned",
 };
+
+/** Unique tags across all projects, ordered by how many projects use them. */
+export function collectTags(items: readonly Project[]): string[] {
+  const counts = new Map<string, number>();
+  for (const project of items) {
+    for (const tag of project.tags) {
+      counts.set(tag, (counts.get(tag) ?? 0) + 1);
+    }
+  }
+  return [...counts.entries()]
+    .sort(([tagA, countA], [tagB, countB]) => countB - countA || tagA.localeCompare(tagB))
+    .map(([tag]) => tag);
+}
+
+/** Projects that include the given tag; `null` means no filter. */
+export function filterByTag(items: readonly Project[], tag: string | null): readonly Project[] {
+  return tag === null ? items : items.filter((project) => project.tags.includes(tag));
+}
