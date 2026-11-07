@@ -9,7 +9,7 @@
 - [x] Filter projects by tag
 - [x] Contact section and footer
 - [x] SEO: metadata, Open Graph, favicon, sitemap
-- [ ] Accessibility and responsive polish
+- [x] Accessibility and responsive polish
 - [ ] Unit tests (Vitest + Testing Library)
 - [ ] CI workflow (lint, test, build)
 - [ ] Deploy workflow to GitHub Pages

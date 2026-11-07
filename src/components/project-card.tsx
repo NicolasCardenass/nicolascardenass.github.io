@@ -1,3 +1,4 @@
+import { ExternalLink } from "@/components/external-link";
 import { repoUrl, statusLabel, type Project, type ProjectStatus } from "@/lib/projects";
 
 const statusStyles: Record<ProjectStatus, string> = {
@@ -8,17 +9,15 @@ const statusStyles: Record<ProjectStatus, string> = {
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="group border-border bg-surface hover:border-foreground/30 relative flex h-full flex-col rounded-2xl border p-6 transition-colors">
+    <article className="group border-border bg-surface hover:border-foreground/30 focus-within:ring-accent relative flex h-full flex-col rounded-2xl border p-6 transition-colors focus-within:ring-2">
       <div className="flex items-start justify-between gap-4">
         <h3 className="text-lg font-semibold">
-          <a
+          <ExternalLink
             href={repoUrl(project)}
-            target="_blank"
-            rel="noopener noreferrer"
             className="after:absolute after:inset-0 after:rounded-2xl focus-visible:outline-none"
           >
             {project.title}
-          </a>
+          </ExternalLink>
         </h3>
         <span
           className={`shrink-0 rounded-full border px-2.5 py-0.5 font-mono text-[11px] ${statusStyles[project.status]}`}

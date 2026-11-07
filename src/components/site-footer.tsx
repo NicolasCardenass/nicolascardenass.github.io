@@ -1,3 +1,4 @@
+import { ExternalLink } from "@/components/external-link";
 import { site } from "@/lib/site";
 
 export function SiteFooter() {
@@ -12,14 +13,12 @@ export function SiteFooter() {
         <nav aria-label="Footer">
           <ul className="flex items-center gap-4">
             <li>
-              <a
+              <ExternalLink
                 href={site.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="hover:text-foreground transition-colors"
               >
                 GitHub
-              </a>
+              </ExternalLink>
             </li>
             <li>
               <a href={`mailto:${site.email}`} className="hover:text-foreground transition-colors">

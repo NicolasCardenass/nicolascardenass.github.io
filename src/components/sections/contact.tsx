@@ -1,3 +1,4 @@
+import { ExternalLink } from "@/components/external-link";
 import { Section } from "@/components/section";
 import { site } from "@/lib/site";
 
@@ -16,14 +17,12 @@ export function Contact() {
           >
             Say hello
           </a>
-          <a
+          <ExternalLink
             href={site.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="border-border hover:border-foreground/40 inline-flex h-11 items-center rounded-full border px-6 text-sm font-medium transition-colors"
           >
             github.com/{site.githubUser}
-          </a>
+          </ExternalLink>
         </div>
         <p className="text-muted mt-6 font-mono text-sm">{site.email}</p>
       </div>

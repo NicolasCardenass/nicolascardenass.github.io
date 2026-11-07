@@ -1,11 +1,6 @@
+import { navItems } from "@/lib/nav";
+import { MobileNav } from "./mobile-nav";
 import { ThemeToggle } from "./theme-toggle";
-
-const navItems = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
-] as const;
 
 export function SiteHeader() {
   return (
@@ -28,6 +23,7 @@ export function SiteHeader() {
             ))}
           </ul>
           <ThemeToggle />
+          <MobileNav />
         </nav>
       </div>
     </header>

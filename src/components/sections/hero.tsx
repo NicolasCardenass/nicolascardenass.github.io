@@ -1,3 +1,4 @@
+import { ExternalLink } from "@/components/external-link";
 import { site } from "@/lib/site";
 
 export function Hero() {
@@ -24,15 +25,13 @@ export function Hero() {
         >
           View projects
         </a>
-        <a
+        <ExternalLink
           href={site.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
           className="border-border hover:border-foreground/40 inline-flex h-11 items-center gap-2 rounded-full border px-6 text-sm font-medium transition-colors"
         >
           <GitHubIcon />
           GitHub
-        </a>
+        </ExternalLink>
       </div>
 
       <p className="text-muted mt-12 font-mono text-xs">
