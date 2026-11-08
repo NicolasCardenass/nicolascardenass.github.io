@@ -11,7 +11,7 @@
 - [x] SEO: metadata, Open Graph, favicon, sitemap
 - [x] Accessibility and responsive polish
 - [x] Unit tests (Vitest + Testing Library)
-- [ ] CI workflow (lint, test, build)
+- [x] CI workflow (lint, test, build)
 - [ ] Deploy workflow to GitHub Pages
 - [ ] Language toggle (EN / PT-BR)
 - [ ] Final README with screenshot

@@ -1,5 +1,7 @@
 # nicolascardenass.github.io
 
+[![CI](https://github.com/NicolasCardenass/nicolascardenass.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/NicolasCardenass/nicolascardenass.github.io/actions/workflows/ci.yml)
+
 > 🇧🇷 Resumo em português no [final deste arquivo](#resumo-em-português).
 
 Personal portfolio of **Nicolas Cardenas**, built with Next.js, TypeScript and Tailwind CSS and
