@@ -38,6 +38,13 @@ npm run dev        # http://localhost:3000
 | `npm run format`        | Format all files with Prettier           |
 | `npm run format:check`  | Check formatting without writing changes |
 
+## Deployment
+
+Every push to `main` triggers the [deploy workflow](./.github/workflows/deploy.yml), which runs the
+tests, builds the static site into `out/` and publishes it to GitHub Pages at
+<https://nicolascardenass.github.io>. In the repository settings, **Pages → Source** must be set to
+**GitHub Actions**.
+
 ## Roadmap
 
 Development progress is tracked in [ROADMAP.md](./ROADMAP.md).

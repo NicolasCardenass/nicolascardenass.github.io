@@ -12,7 +12,7 @@
 - [x] Accessibility and responsive polish
 - [x] Unit tests (Vitest + Testing Library)
 - [x] CI workflow (lint, test, build)
-- [ ] Deploy workflow to GitHub Pages
+- [x] Deploy workflow to GitHub Pages
 - [ ] Language toggle (EN / PT-BR)
 - [ ] Final README with screenshot
 - [ ] GitHub profile README
