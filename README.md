@@ -11,6 +11,7 @@ published as a static site on GitHub Pages.
 - TypeScript (strict mode)
 - Tailwind CSS v4
 - ESLint + Prettier
+- Vitest + React Testing Library
 
 ## Getting started
 
@@ -23,15 +24,17 @@ npm run dev        # http://localhost:3000
 
 ## Scripts
 
-| Script                 | Description                              |
-| ---------------------- | ---------------------------------------- |
-| `npm run dev`          | Start the development server             |
-| `npm run build`        | Build the static site into `out/`        |
-| `npm run start`        | Serve the exported site locally          |
-| `npm run lint`         | Run ESLint                               |
-| `npm run typecheck`    | Type-check the project with `tsc`        |
-| `npm run format`       | Format all files with Prettier           |
-| `npm run format:check` | Check formatting without writing changes |
+| Script                  | Description                              |
+| ----------------------- | ---------------------------------------- |
+| `npm run dev`           | Start the development server             |
+| `npm run build`         | Build the static site into `out/`        |
+| `npm run start`         | Serve the exported site locally          |
+| `npm run lint`          | Run ESLint                               |
+| `npm run typecheck`     | Type-check the project with `tsc`        |
+| `npm test`              | Run unit tests with Vitest               |
+| `npm run test:coverage` | Run tests with a coverage report         |
+| `npm run format`        | Format all files with Prettier           |
+| `npm run format:check`  | Check formatting without writing changes |
 
 ## Roadmap
 
