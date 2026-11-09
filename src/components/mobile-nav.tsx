@@ -1,10 +1,15 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import { navItems } from "@/lib/nav";
+import type { NavItem } from "@/lib/nav";
 
 /** Disclosure menu for small screens, where the inline nav is hidden. */
-export function MobileNav() {
+type MobileNavProps = {
+  items: readonly NavItem[];
+  labels: { openMenu: string; closeMenu: string };
+};
+
+export function MobileNav({ items, labels }: MobileNavProps) {
   const [open, setOpen] = useState(false);
   const menuId = useId();
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -30,7 +35,7 @@ export function MobileNav() {
         type="button"
         aria-expanded={open}
         aria-controls={menuId}
-        aria-label={open ? "Close menu" : "Open menu"}
+        aria-label={open ? labels.closeMenu : labels.openMenu}
         onClick={() => setOpen((value) => !value)}
         className="border-border text-muted hover:text-foreground inline-flex size-9 items-center justify-center rounded-full border transition-colors"
       >
@@ -51,7 +56,7 @@ export function MobileNav() {
         hidden={!open}
         className="border-border bg-background absolute inset-x-0 top-16 border-b px-6 py-3"
       >
-        {navItems.map((item) => (
+        {items.map((item) => (
           <li key={item.href}>
             <a
               href={item.href}

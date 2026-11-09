@@ -1,32 +1,33 @@
 import { ExternalLink } from "@/components/external-link";
+import type { Dictionary } from "@/lib/i18n";
 import { site } from "@/lib/site";
 
-export function Hero() {
+type HeroProps = { dict: Dictionary };
+
+export function Hero({ dict }: HeroProps) {
   return (
     <section
       id="top"
       aria-labelledby="hero-heading"
       className="container-page flex min-h-[calc(100svh-4rem)] flex-col justify-center py-24"
     >
-      <p className="text-accent font-mono text-sm">Hi, my name is</p>
+      <p className="text-accent font-mono text-sm">{dict.hero.greeting}</p>
       <h1 id="hero-heading" className="mt-3 text-5xl font-semibold tracking-tight sm:text-6xl">
         {site.name}.
       </h1>
-      <p className="text-muted mt-4 text-xl font-medium sm:text-2xl">{site.role}</p>
-      <p className="text-muted mt-6 max-w-2xl text-lg leading-relaxed">
-        I build web applications, APIs and AI-powered tools, bringing an engineer&apos;s way of
-        thinking about systems, signals and reliability into software.
-      </p>
+      <p className="text-muted mt-4 text-xl font-medium sm:text-2xl">{dict.hero.role}</p>
+      <p className="text-muted mt-6 max-w-2xl text-lg leading-relaxed">{dict.hero.pitch}</p>
 
       <div className="mt-10 flex flex-wrap items-center gap-3">
         <a
           href="#projects"
           className="bg-accent text-accent-foreground inline-flex h-11 items-center rounded-full px-6 text-sm font-medium transition-opacity hover:opacity-90"
         >
-          View projects
+          {dict.hero.viewProjects}
         </a>
         <ExternalLink
           href={site.githubUrl}
+          newTabHint={dict.common.opensInNewTab}
           className="border-border hover:border-foreground/40 inline-flex h-11 items-center gap-2 rounded-full border px-6 text-sm font-medium transition-colors"
         >
           <GitHubIcon />
@@ -35,7 +36,7 @@ export function Hero() {
       </div>
 
       <p className="text-muted mt-12 font-mono text-xs">
-        <span aria-hidden="true">📍</span> {site.location}
+        <span aria-hidden="true">📍</span> {dict.hero.location}
       </p>
     </section>
   );

@@ -8,7 +8,11 @@ function readTheme(): Theme {
   return isTheme(current) ? current : "dark";
 }
 
-export function ThemeToggle() {
+type ThemeToggleProps = {
+  labels: { toLight: string; toDark: string };
+};
+
+export function ThemeToggle({ labels }: ThemeToggleProps) {
   // `null` until mounted: the real theme is only known in the browser.
   const [theme, setTheme] = useState<Theme | null>(null);
 
@@ -29,7 +33,7 @@ export function ThemeToggle() {
     setTheme(next);
   }
 
-  const label = theme === "dark" ? "Switch to light theme" : "Switch to dark theme";
+  const label = theme === "dark" ? labels.toLight : labels.toDark;
 
   return (
     <button

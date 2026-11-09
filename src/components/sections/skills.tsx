@@ -1,14 +1,20 @@
 import { Section } from "@/components/section";
+import { format, type Dictionary, type Locale } from "@/lib/i18n";
 import { skillGroups } from "@/lib/skills";
 
-export function Skills() {
+type SkillsProps = { dict: Dictionary; locale: Locale };
+
+export function Skills({ dict, locale }: SkillsProps) {
   return (
-    <Section id="skills" eyebrow="02. Skills" title="Tech stack">
+    <Section id="skills" eyebrow={dict.skills.eyebrow} title={dict.skills.title}>
       <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {skillGroups.map((group) => (
-          <li key={group.title} className="border-border bg-surface rounded-2xl border p-6">
-            <h3 className="font-semibold">{group.title}</h3>
-            <ul className="mt-4 flex flex-wrap gap-2" aria-label={`${group.title} skills`}>
+          <li key={group.title.en} className="border-border bg-surface rounded-2xl border p-6">
+            <h3 className="font-semibold">{group.title[locale]}</h3>
+            <ul
+              className="mt-4 flex flex-wrap gap-2"
+              aria-label={format(dict.skills.groupSkillsLabel, { group: group.title[locale] })}
+            >
               {group.skills.map((skill) => (
                 <li
                   key={skill}

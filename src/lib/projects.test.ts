@@ -2,9 +2,27 @@ import { describe, expect, it } from "vitest";
 import { collectTags, filterByTag, projects, repoUrl, type Project } from "./projects";
 
 const sample: Project[] = [
-  { slug: "a", title: "A", description: "", tags: ["Web", "AI"], status: "planned" },
-  { slug: "b", title: "B", description: "", tags: ["AI", "Python"], status: "in-progress" },
-  { slug: "c", title: "C", description: "", tags: ["Python", "AI", "CLI"], status: "completed" },
+  {
+    slug: "a",
+    title: "A",
+    description: { en: "", pt: "" },
+    tags: ["Web", "AI"],
+    status: "planned",
+  },
+  {
+    slug: "b",
+    title: "B",
+    description: { en: "", pt: "" },
+    tags: ["AI", "Python"],
+    status: "in-progress",
+  },
+  {
+    slug: "c",
+    title: "C",
+    description: { en: "", pt: "" },
+    tags: ["Python", "AI", "CLI"],
+    status: "completed",
+  },
 ];
 
 describe("collectTags", () => {

@@ -5,7 +5,8 @@
 > 🇧🇷 Resumo em português no [final deste arquivo](#resumo-em-português).
 
 Personal portfolio of **Nicolas Cardenas**, built with Next.js, TypeScript and Tailwind CSS and
-published as a static site on GitHub Pages.
+published as a static site on GitHub Pages. Available in English (`/`) and Brazilian Portuguese
+(`/pt/`).
 
 ## Stack
 
@@ -14,6 +15,14 @@ published as a static site on GitHub Pages.
 - Tailwind CSS v4
 - ESLint + Prettier
 - Vitest + React Testing Library
+
+## Internationalization
+
+All user-facing text lives in typed dictionaries under `src/lib/i18n` (`en.ts` and `pt.ts`), and
+localized data (project descriptions, skill groups) uses a `Localized` record. Each language has its
+own statically generated page and root layout, so the correct `<html lang>`, canonical URL and
+`hreflang` alternates are emitted without any client-side language detection. A unit test checks
+that both dictionaries define exactly the same keys.
 
 ## Getting started
 
@@ -58,4 +67,4 @@ Development progress is tracked in [ROADMAP.md](./ROADMAP.md).
 ## Resumo em português
 
 Portfólio pessoal de **Nicolas Cardenas**, feito com Next.js, TypeScript e Tailwind CSS e publicado
-como site estático no GitHub Pages. Para rodar localmente: `npm install` e `npm run dev`.
+como site estático no GitHub Pages, em inglês (`/`) e português (`/pt/`). Para rodar localmente: `npm install` e `npm run dev`.
