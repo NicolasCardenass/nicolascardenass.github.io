@@ -14,5 +14,5 @@
 - [x] CI workflow (lint, test, build)
 - [x] Deploy workflow to GitHub Pages
 - [x] Language toggle (EN / PT-BR)
-- [ ] Final README with screenshot
+- [x] Final README with screenshot
 - [ ] GitHub profile README
