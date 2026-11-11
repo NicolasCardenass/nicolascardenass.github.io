@@ -21,7 +21,7 @@ export const projects: readonly Project[] = [
       pt: "Este site: um portfólio em Next.js exportado como site estático, com temas claro/escuro e publicado no GitHub Pages via CI.",
     },
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Web"],
-    status: "in-progress",
+    status: "completed",
   },
   {
     slug: "docs-rag",
@@ -31,7 +31,7 @@ export const projects: readonly Project[] = [
       pt: "Converse com seus documentos: envie PDFs e faça perguntas respondidas por um LLM, com busca semântica (RAG) e citação das fontes.",
     },
     tags: ["AI", "Python", "FastAPI", "Next.js"],
-    status: "planned",
+    status: "in-progress",
   },
   {
     slug: "finflow",

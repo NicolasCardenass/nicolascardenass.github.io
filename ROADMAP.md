@@ -15,4 +15,4 @@
 - [x] Deploy workflow to GitHub Pages
 - [x] Language toggle (EN / PT-BR)
 - [x] Final README with screenshot
-- [ ] GitHub profile README
+- [x] GitHub profile README (in [NicolasCardenass/NicolasCardenass](https://github.com/NicolasCardenass/NicolasCardenass))
